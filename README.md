@@ -6,7 +6,7 @@
         <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-no-green.svg" />
     </a>
     <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">
-        <img alt="License: Creative Commons Zero v1.0 Universal" src="https://img.shields.io/github/license/Ascendus/PersonalBlogAssignment/" />
+        <img alt="License: Creative Commons Zero v1.0 Universal" src="https://img.shields.io/github/license/Ascendus/PersonalBlogAssignment" />
     </a>
 </p>
 
