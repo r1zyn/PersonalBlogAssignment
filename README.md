@@ -33,4 +33,4 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2021 [Ascendus](https://github.com/Ascendus).<br />
-This project is [Creative Commons Zero v1.0 Universal](https://www.gnu.org/licenses/gpl-3.0.en.html) licensed.
+This project is [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) licensed.
