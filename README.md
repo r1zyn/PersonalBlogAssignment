@@ -14,7 +14,7 @@
 
 ### 🏠 [Homepage](https://github.com/Ascendus/PersonalBlogAssignment)
 
-### ✨ [Demo](https://matrixdev.xyz)
+### ✨ [Demo](https://personal-blog-assignment.vercel.app/)
 
 ## Running the website
 You can either open the local file after downloading the source code as a zip (click on the green code button and select download zip) or use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Visual Studio Code extension.
