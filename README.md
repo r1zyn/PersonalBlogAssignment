@@ -10,7 +10,7 @@
     </a>
 </p>
 
-> This is a repository containing the source code for a basoc personal blog assignment website.
+> This is a repository containing the source code for a basic personal blog assignment website.
 
 ### 🏠 [Homepage](https://github.com/Ascendus/PersonalBlogAssignment)
 
@@ -22,7 +22,7 @@ You can either open the local file after downloading the source code as a zip (c
 ## Author
 
 👤 **Ascendus**
-* Github: [@Ascendus](https://github.com/Ascendus)
+[@Ascendus](https://github.com/Ascendus)
 
 ## 🤝 Contributing
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Ascendus/PersonalBlogAssignment/issues). You can also take a look at the [contributing guide](https://github.com/Ascendus/PersonalBlogAssignment/blob/main/.github/CONTRIBUTING.md).
