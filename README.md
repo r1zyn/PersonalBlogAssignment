@@ -19,7 +19,7 @@
 ## Running the website
 You can either open the local file after downloading the source code as a zip (click on the green code button and select download zip) or use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) Visual Studio Code extension.
 
-When downloading the zip files, only the `pages`, `public` and `styles` folders are required for the website to function.
+When downloading the zip files, only the `pages` folder is required for the website to function.
 
 ## Author
 
