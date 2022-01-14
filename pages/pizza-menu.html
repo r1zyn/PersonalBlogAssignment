@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pizza Menu</title>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+            @font-face {
+                font-family: "Remington";
+                src: url("../public/Remingtoned-Type.woff");
+            }
+            
+            html, body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .container {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60%;
+                background-color: black;
+                text-align: center;
+                background: url("https://i.pinimg.com/originals/dd/81/e1/dd81e151eee6e6abf3ed648624ec2e0d.jpg") no-repeat;
+                background-position: center;
+                padding-bottom: 5rem;
+            }
+
+            .menu-list {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .menu-title {
+                color: white;
+                font-size: 5rem;
+                margin-top: 0rem;
+                font-family: "Remington", sans-serif;
+            }
+
+            .menu-list-item {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .menu-list-item-title {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                column-gap: 0.5rem;
+                width: 100%;
+                font-family: 'Lobster', cursive;
+            }
+
+            .menu-list-item-title h1 {
+                color: red;
+            }
+
+            .menu-list-item-title h2 {
+                color: white;
+            }
+
+            .menu-list-item-description {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="menu-title">Crust Pizza</h1>
+
+            <div class="menu-list">
+                <div class="menu-list-item">
+                    <div class="menu-list-item-title">
+                    <img src="../public/pizza.png" alt="Picture of pizza" height="40" width="40" />
+                    <h2>Margherita</h2>
+                    <h1>$12.50</h1>
+                    </div>
+
+                    <p class="menu-list-item-description">
+                        Fresh tomatoes, fresh mozarella, fresh basil
+                    </p>
+                </div>
+
+                <div class="menu-list-item">
+                    <div class="menu-list-item-title">
+                        <img src="../public/pizza.png" alt="Picture of pizza" height="40" width="40" />
+                        <h2 style="color: #ffcc00;">Formaggie</h2>
+                        <h1>$15.50</h1>
+                    </div>
+
+                    <p class="menu-list-item-description">
+                        Four cheeses (mozarella, parmesan, percorino, jarlberg)
+                    </p>
+                </div>
+
+                <div class="menu-list-item">
+                    <div class="menu-list-item-title">
+                        <img src="../public/pizza.png" alt="Picture of pizza" height="40" width="40" />
+                        <h2>Chicken</h2>
+                        <h1>$17.00</h1>
+                    </div>
+
+                    <p class="menu-list-item-description">
+                        Fresh tomatoes, mozarella, chicken, onions
+                    </p>
+                </div>
+
+                <div class="menu-list-item">
+                    <div class="menu-list-item-title">
+                        <img src="../public/pizza.png" alt="Picture of pizza" height="40" width="40" />
+                        <h2 style="color: #ffcc00;">Pineapple'o'clock</h2>
+                        <h1>$16.50</h1>
+                    </div>
+
+                    <p class="menu-list-item-description">
+                        Fresh tomatoes, mozarella, fresh pineapple bacon, fresh basil
+                    </p>
+                </div>
+
+                <div class="menu-list-item">
+                    <div class="menu-list-item-title">
+                        <img src="../public/pizza.png" alt="Picture of pizza" height="40" width="40" />
+                        <h2>Meat Town Hotl</h2>
+                        <h1>$20.00</h1>
+                    </div>
+
+                    <p class="menu-list-item-description">
+                        Fresh tomatoes, mozarella, hot pepperoni, hot sauce, beef, chicken
+                    </p>
+                </div>
+
+                <div class="menu-list-item">
+                    <div class="menu-list-item-title">
+                        <img src="../public/pizza.png" alt="Picture of pizza" height="40" width="40" />
+                        <h2>Parma New</h2>
+                        <h1>$21.50</h1>
+                    </div>
+
+                    <p class="menu-list-item-description">
+                        Fresh tomatoes, mozarella, parma, bacon, fresh arugula
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
