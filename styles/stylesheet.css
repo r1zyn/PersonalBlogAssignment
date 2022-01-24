@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+html, body {
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(105, 69, 69);
+}
+
+a, a:link, a:visited {
+    color: rgb(105, 69, 69);
+}
+
+hr {
+    float: left;
+    width: 80%;
+    font-weight: bolder;
+    color: rgb(105, 69, 69);
+    background-color: rgb(105, 69, 69);
+    border: 1px solid rgb(105, 69, 69);
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-top: auto;
+    padding: 0;
+    width: 90%;
+    background-image: url("https://cdn.discordapp.com/attachments/925290062348976148/933676474484006922/2Q.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    background-color: rgba(0, 0, 0, 0.265);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    padding-top: 1rem;
+    column-gap: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.nav-links li a {
+    text-decoration: underline;
+    color: rgb(105, 69, 69);
+}
+
+.nav-date {
+    font-size: 1.2rem;
+}
+
+.cake-title {
+    font-weight: bolder;
+}
+
+.cake-description {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.cake-footer {
+    font-weight: bolder;
+}
+
+footer {
+    padding-bottom: 0.7rem;
+}
+
+.footer-contact {
+    bottom: 0;
+    position: absolute;
+}
