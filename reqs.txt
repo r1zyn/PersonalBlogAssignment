@@ -1,0 +1,170 @@
+The Contact me feature allows viewers to enter contact information with the blog owner. The information includes:
+
+- Full name
+
+- Email address
+
+- Title
+
+- Message content
+
+Order feature, allows viewers to submit order information. The information includes:
+
+- The name of the cake you want to buy
+
+- Name of the person who set it
+
+- The words will be written on the cake
+
+- Some items are often bought with the cake such as candles, fireworks, decorations...
+
+- Delivery date
+
+- Delivery address
+
+- Call before delivery
+
+On each page, several fields of data are required to be checked before the data is sent.
+2. Create 2 more pages order.html and contact.html
+
+3. Put this 2 page link on the menu of all previous pages
+
+4. Write more CSS for the form elements to match the existing CSS
+
+5. Create a folder structure to save Javascript files
+
+6. Create Javascript file for contact.html page and embed Javascript in page
+
+7. Create Javascript file for order.html page and embed Javascript in the page
+
+8. Write Javascript code to fulfill the requirements of the exercise
+
+when contacting the creator(errors):
+1. if the person doesn't put their name, please put a text that says, "Please fill out your name". make the text red, a little smaller, and under the input box.
+2. The name exceeds 100 characters. In this case, put a text that says, "Your name should not exceed 100 characters." make it red, smaller, under the input box
+3. If the person doesn't put their email, put a text that says, "Please fill out your email." red, smaller, under the input box
+4. Email exceeds 100 characters, then put a text that says, "Your email should not exceed 100 characters." red, smaller, under the input box.
+5. If the person doesn't put the subject of the email, put a text that says, "Please fill out the subject." red, smaller, under the input box
+6. Subject shouldn't be less than 50 characters, more than 250 characters. If there's less, say "Subject should not be shorter than 50 characters." If there's more, say "Subject should not exceed 250 characters."
+7. If there's no message in the message box, put a text that says, "Please fill out the message."
+8. If the message is over 500 characters long, say "Message should not exceed 500 characters." red, smaller, under the input box
+9. All errors should show up at the same time(if theres more than 1). 
+IF THERES NO ERROR, DELETE ALL THE RED TEXT
+for ordering the cake:
+put a drop down menu with all the cake names:
+Classic Yellow Cake
+
+Coconut Bundt Cake
+
+Cream Cheese Pound Cake
+
+German Chocolate Cake
+you cannot leave this blank
+Your name: cannot leave this blank, cannot exceed 100 characters
+Message: can leave this blank, cannot exceed 30 characters
+Includes(extra items to go along w the cake):
+Candle
+Firework
+Toys
+you can choose multiple items
+Deliver date: cannot leave this blank
+Deliver to: cannot leave blank, cannot exceed 500 char, allow the user to enter multiple lines of input
+Call before delivery: automatically set to no, but user can choose yes.
+
+order now(button): press on it to order
+Show error message: “Please select our product.”
+
+Red error message, displayed below the input box
+
+2
+
+Do not enter a name in the Your name field
+
+Show error message: “Please fill out your name.”
+
+Red error message, displayed below the input box
+
+3
+
+Enter in Your name field more than 100 characters
+
+Displays an error message: “Your name should not exceed 100 characters.”
+
+Red error message, displayed below the input box
+
+4
+
+Enter the correct data in the field Your name
+
+Clear the error message on the screen
+
+5
+
+Enter more than 30 characters in the Message field
+
+Displays an error message: “Message should not exceed 30 characters.”
+
+Red error message, displayed below the input box
+
+6
+
+Enter the correct data in the Message . field
+
+Clear the error message on the screen
+
+7
+
+Do not enter data in the Deliver date field
+
+Show error message: “Please fill out the deliver date.”
+
+Red error message, displayed below the input box
+
+8
+
+Enter the correct data in the Deliver date field
+
+Clear the error message on the screen
+
+9
+
+Do not enter data in the Deliver to field
+
+Show error message: “Please fill out the address.”
+
+Red error message, displayed below the input box
+
+10
+
+Enter in the Deliver field to more than 500 characters
+
+Displays an error message: “Address should not exceed 500 characters.”
+
+Red error message, displayed below the input box
+
+11
+
+Enter the correct data in the Deliver to field
+
+Clear the error message on the screen
+
+FOR ORDER.JS
+In the PersonalBlog root folder, create a folder named js to store javascript files - Create order.js file, and embed this file in order.html file with script tag. - Write JavaScript code for onclick event of button Order now
+Get values ​​in data fields 
+Perform value check and display error message for each error (if any) 
+Implement hide error message if user entered correct data
+Implement notification if user entered all data correctly
+
+
+THINGS IM GETTING GRADED ON:
+Create a page according to the description required 
+There are enough data fields put in the form . tag 
+The data fields use the right type of control (control) as required
+
+Create javascript files for the page 
+Embed Javascript in the page with the <script> . tag 
+Position the <script> tag correctly at the end of the <body> . tag 
+Using Javascript to get data values ​​on fields
+Use Javascript to check the data on each field according to the description request
+For each data error found, display the corresponding error message according to the required description 
+If the data is correct, clear the error message on the screen
