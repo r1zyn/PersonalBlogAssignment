@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
-html, body {
+html,
+body {
     padding: 0;
     left: 0;
     top: 0;
@@ -8,7 +9,9 @@ html, body {
     color: rgb(105, 69, 69);
 }
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
     color: rgb(105, 69, 69);
 }
 
@@ -85,4 +88,19 @@ footer {
 .footer-contact {
     bottom: 0;
     position: absolute;
+}
+
+.contact-form h1 {
+
+    margin-bottom: 0px;
+    font-size: 50px;
+}
+
+.contact-form {
+    margin-left: 20px;
+}
+
+textarea {
+    resize: none;
+
 }

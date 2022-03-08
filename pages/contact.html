@@ -1,40 +1,104 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact Me</title>
 
-        <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css" />
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
 
-    <body>
-        <header class="header header-contact">
-            <h1 class="header-title">Contact</h1>
-            <div></div>
-        </header>
+    <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css" />
+</head>
 
-        <nav class="nav nav-contact">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+<body>
+    <header class="header header-contact">
+        <h1 class="header-title">Contact</h1>
+        <div></div>
+    </header>
 
-        <main class="content content-contact">
-            <br />
-            <h2>THUÊ SÂN BÓNG</h2>
-            <ul>
-                <li>Liê hê: <a href="mailto:thuesanbong@gmail.com">thuesanbong@gmail.com</a></li>
-                <li>Facebook: <a href="https://facebook.com">Thuê Sân Bóng</a></li>
-                <li>Zalo: <a href="tel:+0912345678">0912345678</a></li>
-            </ul>
-        </main>
+    <nav class="nav nav-contact">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <footer class="footer footer-contact">
-            &copy; 2023 by Chi's Cake
-        </footer>
-    </body>
+
+    <div class="contact-form">
+
+        <form name="contact">
+
+            <h1>Contact me</h1>
+
+            <hr>
+
+            <br>
+
+            <label for="cakeName">Cake name:</label>
+            <select name="cakes" id="cakes">
+                <option value="placeholder">--- Select cake ---</option>
+                <option value="cakeOne">Cake One</option>
+                <option value="cakeTwo">Cake Two</option>
+                <option value="cakeThree">Cake Third</option>
+                <option value="cakeFour">Cake Four</option>
+            </select>
+
+            <br>
+
+            <label for="yourName">Your name:</label>
+            <input name="name" type="text">
+
+            <br>
+
+            <label for="message">Message</label>
+            <input name="message" type="text" placeholder="type your text you want written on the cake">
+
+            <br>
+
+            <label for="includes">Includes:</label>
+            <input type="checkbox" id="candle" name="candle" value="Candle">
+            <label for="candle">Candle</label>
+            <input type="checkbox" id="candle" name="candle" value="Candle">
+            <label for="candle">Candle</label>
+            <input type="checkbox" id="candle" name="candle" value="Candle">
+            <label for="candle">Candle</label>
+
+            <br>
+
+            <label for="deliveryDate">Deliver Date:</label>
+            <input type="date" id="date" name="date">
+
+            <br>
+
+            <label for='deliverTo'>Deliver to:</label>
+            <textarea name='deliverTo' id="deliverTo" cols="30" rows="10"></textarea>
+
+            <br>
+
+            <label for="callBefore">Call before deliver?</label>
+            <input type='radio' id="yes" name="callBefore" value="Yes">
+            <label for="yes">Yes</label>
+            <input type='radio' id="no" name="callBefore" value="No">
+            <label for="no">No</label>
+
+        </form>
+
+    </div>
+
+    <main class="content content-contact">
+        <br />
+        <h2>THUÊ SÂN BÓNG</h2>
+        <ul>
+            <li>Liê hê: <a href="mailto:thuesanbong@gmail.com">thuesanbong@gmail.com</a></li>
+            <li>Facebook: <a href="https://facebook.com">Thuê Sân Bóng</a></li>
+            <li>Zalo: <a href="tel:+0912345678">0912345678</a></li>
+        </ul>
+    </main>
+
+    <footer class="footer footer-contact">
+        &copy; 2023 by Chi's Cake
+    </footer>
+</body>
+
 </html>
