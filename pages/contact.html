@@ -35,36 +35,49 @@
 
             <br>
 
-            <label for="cakeName">Cake name:</label>
-            <select name="cakes" id="cakes">
-                <option value="placeholder">--- Select cake ---</option>
-                <option value="cakeOne">Cake One</option>
-                <option value="cakeTwo">Cake Two</option>
-                <option value="cakeThree">Cake Third</option>
-                <option value="cakeFour">Cake Four</option>
-            </select>
+            <div class="form-group">
+                <label for="cakeName">Cake name:</label>
+                <select name="cakes" id="cakes">
+                    <option value="placeholder">--- Select cake ---</option>
+                    <option value="cakeOne">Cake One</option>
+                    <option value="cakeTwo">Cake Two</option>
+                    <option value="cakeThree">Cake Third</option>
+                    <option value="cakeFour">Cake Four</option>
+                </select>
+            </div>
 
             <br>
 
-            <label for="yourName">Your name:</label>
-            <input name="name" type="text">
+            <div class="form-group">
+                <label for="yourName">Your name:</label>
+                <input name="name" type="text">
+            </div>
 
             <br>
 
-            <label for="message">Message</label>
-            <input name="message" type="text" placeholder="type your text you want written on the cake">
+            <div class="form-group">
+                <label for="message">Message</label>
+                <input name="message" type="text" placeholder="type your text you want written on the cake">
+            </div>
 
             <br>
 
-            <label for="includes">Includes:</label>
-            <input type="checkbox" id="candle" name="candle" value="Candle">
-            <label for="candle">Candle</label>
-            <input type="checkbox" id="candle" name="candle" value="Candle">
-            <label for="candle">Candle</label>
-            <input type="checkbox" id="candle" name="candle" value="Candle">
-            <label for="candle">Candle</label>
+            <div class="form-group check"> <label for="includes">Includes:</label>
+                <div class="checkbox-inner">
+
+                    <div class="candle-inner">
+                        <input type="checkbox" id="candle" name="candle" value="Candle">
+                        <label for="candle">Candle</label>
+
+                    </div>
+
+
+
+                </div>
+            </div>
 
             <br>
+
 
             <label for="deliveryDate">Deliver Date:</label>
             <input type="date" id="date" name="date">
@@ -81,6 +94,11 @@
             <label for="yes">Yes</label>
             <input type='radio' id="no" name="callBefore" value="No">
             <label for="no">No</label>
+
+            <br>
+
+
+            <input type="submit" name="submit" id="submit">
 
         </form>
 

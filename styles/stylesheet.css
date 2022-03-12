@@ -102,5 +102,51 @@ footer {
 
 textarea {
     resize: none;
+}
+
+input,textarea,select,label{
+    font-size: 20px
+}
+
+select{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+input[type=text],
+input[type=date],
+textarea,
+select {
+    width: 600px;
+    color: rgb(105, 69, 69);
+    border: 2px solid rgb(105, 69, 69);
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family: 'Dancing Script', cursive;
 
 }
+
+
+.form-group{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.check{
+    border: 0px white solid;
+}
+
+.checkbox-inner{
+    flex-direction: column;
+    border: solid;
+    display: flex;
+
+}
+
+
