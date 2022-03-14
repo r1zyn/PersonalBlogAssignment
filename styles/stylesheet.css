@@ -108,8 +108,7 @@ form {}
 
 input,
 textarea,
-select
- {
+select {
     font-size: 20px;
     margin-left: 30px;
 }
@@ -131,7 +130,7 @@ textarea {
     padding-top: 7px;
     padding-bottom: 7px;
     font-family: 'Dancing Script', cursive;
-    
+
 
 }
 
@@ -188,14 +187,26 @@ select {
 
 }
 
-.sm{
+.errorgroup{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sm {
     display: flex;
     width: 620px;
     justify-content: baseline;
 }
 
-#error{
+.errortext {
     color: red;
     display: none;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#error1 {}
+
+#error2{
+    margin-left: 30px;
 }

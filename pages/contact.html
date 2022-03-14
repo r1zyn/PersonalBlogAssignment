@@ -52,7 +52,7 @@
                         <option value="cakeThree">German Chocolate Cake</option>
                         <option value="cakeFour">Classic Yellow Cake</option>
                     </select>
-                    <p id="error">Please Slect Our Product</p>
+                    <p id="error1" class="errortext">Please Select Our Product</p>
                 </div>
             </div>
 
@@ -60,7 +60,10 @@
 
             <div class="form-group">
                 <label for="yourName">Your name:</label>
-                <input name="yourName" type="text">
+                <div class="errorgroup">
+                    <input name="yourName" type="text">
+                    <p id="error2" class="errortext">Please fill out your name.</p>
+                </div>
             </div>
 
             <br>
@@ -148,23 +151,36 @@
 
     <script>
         function validateForm() {
-            var x = document.forms["contact"]["yourName"].value;
-            var a = document.forms["contact"]["cakes"].value;
-            var errorText = document.getElementById("error");
+            var name = document.forms["contact"]["yourName"].value;
+            var cakeselect = document.forms["contact"]["cakes"].value;
 
-            console.log(errorText.style.display);
+            var error1 = document.getElementById("error1");
+            var error2 = document.getElementById("error2");
 
-            if (a == "placeholder") {
-                alert("Please Select Our Product")
 
+
+            if (cakeselect == "placeholder") {
+                error1.style.display = "block";
+
+                alert("Please Select Our Product");
                 return false;
-                errorText.style.display = block;
+            }
+
+            if (cakeselect !== "placeholder") {
+                error1.style.display = "none";
 
             }
 
-            if (x == "") {
-                alert('Please Enter Your Name')
+
+            if (name == "") {
+                error2.style.display = "block";
+
+                alert('Please Enter Your Name');
                 return false;
+            }
+
+            if (name !== "") {
+                error2.style.display = "none";
             }
 
 
