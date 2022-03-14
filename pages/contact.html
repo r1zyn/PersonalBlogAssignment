@@ -7,6 +7,9 @@
     <title>Contact Me</title>
 
     <link rel="stylesheet" type="text/css" href="../styles/stylesheet.css" />
+
+
+
 </head>
 
 <body>
@@ -27,30 +30,37 @@
 
     <div class="contact-form">
 
-        <form name="contact">
+        <form name="contact" onsubmit="return validateForm()">
 
-            <h1>Contact me</h1>
+            <h1>Order Now</h1>
+
+
 
             <hr>
 
             <br>
 
+            <br>
+
             <div class="form-group">
                 <label for="cakeName">Cake name:</label>
-                <select name="cakes" id="cakes">
-                    <option value="placeholder">--- Select cake ---</option>
-                    <option value="cakeOne">Cake One</option>
-                    <option value="cakeTwo">Cake Two</option>
-                    <option value="cakeThree">Cake Third</option>
-                    <option value="cakeFour">Cake Four</option>
-                </select>
+                <div class="errorgroup">
+                    <select name="cakes" id="cakes" required>
+                        <option value="placeholder">--- Select cake ---</option>
+                        <option value="cakeOne">Coconut Bundt Cake</option>
+                        <option value="cakeTwo">Cream Cheese Pound Cake</option>
+                        <option value="cakeThree">German Chocolate Cake</option>
+                        <option value="cakeFour">Classic Yellow Cake</option>
+                    </select>
+                    <p id="error">Please Slect Our Product</p>
+                </div>
             </div>
 
             <br>
 
             <div class="form-group">
                 <label for="yourName">Your name:</label>
-                <input name="name" type="text">
+                <input name="yourName" type="text">
             </div>
 
             <br>
@@ -68,7 +78,16 @@
                     <div class="candle-inner">
                         <input type="checkbox" id="candle" name="candle" value="Candle">
                         <label for="candle">Candle</label>
+                    </div>
 
+                    <div class="candle-inner">
+                        <input type="checkbox" id="candle" name="candle" value="Candle">
+                        <label for="candle">Firework</label>
+                    </div>
+
+                    <div class="candle-inner">
+                        <input type="checkbox" id="candle" name="candle" value="Candle">
+                        <label for="candle">Toys</label>
                     </div>
 
 
@@ -78,28 +97,37 @@
 
             <br>
 
-
-            <label for="deliveryDate">Deliver Date:</label>
-            <input type="date" id="date" name="date">
-
-            <br>
-
-            <label for='deliverTo'>Deliver to:</label>
-            <textarea name='deliverTo' id="deliverTo" cols="30" rows="10"></textarea>
+            <div class="form-group">
+                <label for="deliveryDate">Deliver Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
 
             <br>
 
-            <label for="callBefore">Call before deliver?</label>
-            <input type='radio' id="yes" name="callBefore" value="Yes">
-            <label for="yes">Yes</label>
-            <input type='radio' id="no" name="callBefore" value="No">
-            <label for="no">No</label>
+            <div class="form-group">
+                <label for='deliverTo'>Deliver to:</label>
+                <textarea name='deliverTo' id="deliverTo" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+
+            <div class="form-group call">
+                <label for="callBefore">Call before deliver?</label>
+                <div class="Call-buttons">
+                    <input type='radio' id="yes" name="callBefore" value="Yes">
+                    <label for="yes">Yes</label>
+                    <input type='radio' id="no" name="callBefore" value="No">
+                    <label for="no">No</label>
+                </div>
+            </div>
 
             <br>
 
-
-            <input type="submit" name="submit" id="submit">
-
+            <div class="form-group">
+                <div class="cl"></div>
+                <div class="sm">
+                    <button type="submit" id="submit" class="submit" name="submit" value="bar">Order Now</button>
+                </div>
+            </div>
         </form>
 
     </div>
@@ -114,9 +142,35 @@
         </ul>
     </main>
 
-    <footer class="footer footer-contact">
+    <footer>
         &copy; 2023 by Chi's Cake
     </footer>
+
+    <script>
+        function validateForm() {
+            var x = document.forms["contact"]["yourName"].value;
+            var a = document.forms["contact"]["cakes"].value;
+            var errorText = document.getElementById("error");
+
+            console.log(errorText.style.display);
+
+            if (a == "placeholder") {
+                alert("Please Select Our Product")
+
+                return false;
+                errorText.style.display = block;
+
+            }
+
+            if (x == "") {
+                alert('Please Enter Your Name')
+                return false;
+            }
+
+
+        }
+    </script>
+
 </body>
 
 </html>
