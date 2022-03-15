@@ -35,7 +35,7 @@ On each page, several fields of data are required to be checked before the data 
 
 6. Create Javascript file for contact.html page and embed Javascript in page
 
-7. Create Javascript file for order.html page and embed Javascript in the page
+7. Create Javascript file for order.html page and embed Javascript in the page 
 
 8. Write Javascript code to fulfill the requirements of the exercise
 

@@ -28,112 +28,6 @@
     </nav>
 
 
-    <div class="contact-form">
-
-        <form name="contact" onsubmit="return validateForm()">
-
-            <h1>Order Now</h1>
-
-
-
-            <hr>
-
-            <br>
-
-            <br>
-
-            <div class="form-group">
-                <label for="cakeName">Cake name:</label>
-                <div class="errorgroup">
-                    <select name="cakes" id="cakes" required>
-                        <option value="placeholder">--- Select cake ---</option>
-                        <option value="cakeOne">Coconut Bundt Cake</option>
-                        <option value="cakeTwo">Cream Cheese Pound Cake</option>
-                        <option value="cakeThree">German Chocolate Cake</option>
-                        <option value="cakeFour">Classic Yellow Cake</option>
-                    </select>
-                    <p id="error1" class="errortext">Please Select Our Product</p>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <label for="yourName">Your name:</label>
-                <div class="errorgroup">
-                    <input name="yourName" type="text">
-                    <p id="error2" class="errortext">Please fill out your name.</p>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <input name="message" type="text" placeholder="type your text you want written on the cake">
-            </div>
-
-            <br>
-
-            <div class="form-group check"> <label for="includes">Includes:</label>
-                <div class="checkbox-inner">
-
-                    <div class="candle-inner">
-                        <input type="checkbox" id="candle" name="candle" value="Candle">
-                        <label for="candle">Candle</label>
-                    </div>
-
-                    <div class="candle-inner">
-                        <input type="checkbox" id="candle" name="candle" value="Candle">
-                        <label for="candle">Firework</label>
-                    </div>
-
-                    <div class="candle-inner">
-                        <input type="checkbox" id="candle" name="candle" value="Candle">
-                        <label for="candle">Toys</label>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <label for="deliveryDate">Deliver Date:</label>
-                <input type="date" id="date" name="date">
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <label for='deliverTo'>Deliver to:</label>
-                <textarea name='deliverTo' id="deliverTo" cols="30" rows="10"></textarea>
-            </div>
-            <br>
-
-            <div class="form-group call">
-                <label for="callBefore">Call before deliver?</label>
-                <div class="Call-buttons">
-                    <input type='radio' id="yes" name="callBefore" value="Yes">
-                    <label for="yes">Yes</label>
-                    <input type='radio' id="no" name="callBefore" value="No">
-                    <label for="no">No</label>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="form-group">
-                <div class="cl"></div>
-                <div class="sm">
-                    <button type="submit" id="submit" class="submit" name="submit" value="bar">Order Now</button>
-                </div>
-            </div>
-        </form>
-
-    </div>
 
     <main class="content content-contact">
         <br />
@@ -145,44 +39,98 @@
         </ul>
     </main>
 
+    <div class="contact-form">
+
+        <form name="contact" onsubmit="return validateForm()">
+
+            <h1>Contact Me</h1>
+
+
+
+            <hr>
+
+            <br>
+
+            <br>
+
+            <div class="form-group">
+                <label for="yourName">Your name:</label>
+                <div class="errorgroup">
+                    <input placeholder="Please enter your full name" name="yourName" type="text">
+                    <p id="error2" class="errortext">Please fill out your name.</p>
+                    <p id="error3" class="errortext">Name cannot exceed 100 charcters</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="email">Your email:</label>
+                <div class="errorgroup">
+                    <input placeholder="Please enter your email" type="email" name="email" id="email">
+                    <p id="error11" class="errortext">Please fill out your email</p>
+                    <p id="error12" class="errortext">Your email should not exceed 100 characters</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <div class="errortext">
+                <input type="text" name="subject" id="subject">
+                <p id="error13" class="errortext">Please fill out the subject</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="form-group">
+                <div class="cl"></div>
+                <div class="sm">
+                    <button type="submit" id="submit" class="submit" name="submit" value="bar">Order Now</button>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
     <footer>
         &copy; 2023 by Chi's Cake
     </footer>
-
     <script>
         function validateForm() {
-            var name = document.forms["contact"]["yourName"].value;
-            var cakeselect = document.forms["contact"]["cakes"].value;
 
-            var error1 = document.getElementById("error1");
+            var name = document.forms["contact"]["yourName"];
+            var namelength = name.value.length;
             var error2 = document.getElementById("error2");
+            var error3 = document.getElementById("error3");
 
-
-
-            if (cakeselect == "placeholder") {
-                error1.style.display = "block";
-
-                alert("Please Select Our Product");
-                return false;
-            }
-
-            if (cakeselect !== "placeholder") {
-                error1.style.display = "none";
-
-            }
-
-
-            if (name == "") {
+            if (name.value == "") {
                 error2.style.display = "block";
 
                 alert('Please Enter Your Name');
                 return false;
             }
 
-            if (name !== "") {
+            if (name.value !== "") {
                 error2.style.display = "none";
             }
 
+            if (name.value.length > 100) {
+                alert("Name cannot exceed 100 characters");
+                error3.style.display = "block";
+                return false;
+            }
+
+            if (name.value.length < 100) {
+                error3.style.display = "none";
+            }
 
         }
     </script>
