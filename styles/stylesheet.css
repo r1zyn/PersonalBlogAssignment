@@ -208,7 +208,7 @@ label {}
 
 .errortext {
     color: red;
-    display: block;
+    display: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -223,7 +223,11 @@ label {}
 #error10,
 #error11,
 #error12,
-#error13 {
+#error13,
+#error14,
+#error15,
+#error16,
+#error17 {
     margin-bottom: 0px;
     margin-left: 30px;
 }

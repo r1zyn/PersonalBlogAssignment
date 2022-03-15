@@ -41,13 +41,21 @@ On each page, several fields of data are required to be checked before the data 
 
 when contacting the creator(errors):
 1. if the person doesn't put their name, please put a text that says, "Please fill out your name". make the text red, a little smaller, and under the input box.
+
 2. The name exceeds 100 characters. In this case, put a text that says, "Your name should not exceed 100 characters." make it red, smaller, under the input box
+
 3. If the person doesn't put their email, put a text that says, "Please fill out your email." red, smaller, under the input box
+
 4. Email exceeds 100 characters, then put a text that says, "Your email should not exceed 100 characters." red, smaller, under the input box.
+
 5. If the person doesn't put the subject of the email, put a text that says, "Please fill out the subject." red, smaller, under the input box
+
 6. Subject shouldn't be less than 50 characters, more than 250 characters. If there's less, say "Subject should not be shorter than 50 characters." If there's more, say "Subject should not exceed 250 characters."
+
 7. If there's no message in the message box, put a text that says, "Please fill out the message."
+
 8. If the message is over 500 characters long, say "Message should not exceed 500 characters." red, smaller, under the input box
+
 9. All errors should show up at the same time(if theres more than 1). 
 IF THERES NO ERROR, DELETE ALL THE RED TEXT
 for ordering the cake:

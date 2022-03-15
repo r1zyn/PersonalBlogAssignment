@@ -78,10 +78,24 @@
             <br>
 
             <div class="form-group">
-                <label for="subject">Subject</label>
-                <div class="errortext">
-                <input type="text" name="subject" id="subject">
-                <p id="error13" class="errortext">Please fill out the subject</p>
+                <label for="subject">Subject:</label>
+                <div class="errorgroup">
+                    <input type="text" name="subject" id="subject">
+                    <p id="error13" class="errortext">Please fill out the subject</p>
+                    <p id="error14" class="errortext">Subject should not exceed 250 characters</p>
+                    <p id="error15" class="errortext">Subject should not be shorter than 50 characters</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="form-group">
+                <label for="message2">Message:</label>
+                <div class="errorgroup">
+                    <textarea name="message2" id="message2" cols="30" rows="10"></textarea>
+                    <p id="error16" class="errortext">Please fill out the message</p>
+                    <p id="error17" class="errortext">Message should not exceed 500 characters</p>
                 </div>
             </div>
 
@@ -96,6 +110,8 @@
             </div>
 
 
+
+
         </form>
 
     </div>
@@ -103,37 +119,8 @@
     <footer>
         &copy; 2023 by Chi's Cake
     </footer>
-    <script>
-        function validateForm() {
 
-            var name = document.forms["contact"]["yourName"];
-            var namelength = name.value.length;
-            var error2 = document.getElementById("error2");
-            var error3 = document.getElementById("error3");
-
-            if (name.value == "") {
-                error2.style.display = "block";
-
-                alert('Please Enter Your Name');
-                return false;
-            }
-
-            if (name.value !== "") {
-                error2.style.display = "none";
-            }
-
-            if (name.value.length > 100) {
-                alert("Name cannot exceed 100 characters");
-                error3.style.display = "block";
-                return false;
-            }
-
-            if (name.value.length < 100) {
-                error3.style.display = "none";
-            }
-
-        }
-    </script>
+    <script src="/Scripts/contact.js"></script>
 
 </body>
 
