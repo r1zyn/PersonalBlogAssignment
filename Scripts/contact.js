@@ -25,7 +25,6 @@ function validateForm() {
         error2.style.display = "block";
 
         alert('Please Enter Your Name');
-        return false;
     }
 
     if (name.value !== "") {
@@ -35,7 +34,6 @@ function validateForm() {
     if (name.value.length > 100) {
         alert("Name cannot exceed 100 characters");
         error3.style.display = "block";
-        return false;
     }
 
     if (name.value.length < 100) {
@@ -48,7 +46,6 @@ function validateForm() {
     if (email == "") {
         error11.style.display = "block";
         alert('Please fill out your email');
-        return false;
     }
 
     if (email !== "") {
@@ -59,26 +56,22 @@ function validateForm() {
     if (email.length > 100) {
         error12.style.display = "block";
         alert('Your email should not exceed 100 characters');
-        return false;
     }
 
 
     if (subject.length == 0) {
         error13.style.display = 'block';
         alert('Please fill out the subject');
-        return false
     }
 
     if (subject.length < 50) {
         error15.style.display = 'block';
         alert('Subject should not be shorter than 50 characters');
-        return false
     }
 
     if (subject.length > 250) {
         error14.style.display = 'block';
         alert('Subject should not exceed 250 characters');
-        return false;
     }
 
 
@@ -86,13 +79,11 @@ function validateForm() {
         console.log("hel")
         alert("Please enter a message")
         error16.style.display = "block";
-        return false;
     }
 
     if (del.value.length > 500) {
         alert("Message should not exceed 500 characters");
         error17.style.display = "block";
-        return false;
     }
 
     if (del.value.length < 500) {
@@ -104,6 +95,10 @@ function validateForm() {
     }
 
 
+    if ((name.value == "") || (name.value.length > 100) || (email.value == "") || (email.length > 100) || (subject.length == 0) || (subject.length < 50) || (subject.length > 250) || (del.value == "") || (del.value.length > 500)) {
+        console.log('fail');
+        return false;
+    }
 
 
 

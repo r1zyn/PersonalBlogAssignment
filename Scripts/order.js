@@ -40,7 +40,6 @@ function validateForm() {
         error1.style.display = "block";
 
         alert("Please Select Our Product");
-        return false;
     }
 
     if (cakeselect !== "placeholder") {
@@ -55,7 +54,6 @@ function validateForm() {
         error2.style.display = "block";
 
         alert('Please Enter Your Name');
-        return false;
     }
 
     if (name.value !== "") {
@@ -65,7 +63,6 @@ function validateForm() {
     if (name.value.length > 100) {
         alert("Name cannot exceed 100 characters");
         error3.style.display = "block";
-        return false;
     }
 
     if (name.value.length < 100) {
@@ -75,7 +72,6 @@ function validateForm() {
     if (message == "") {
         error10.style.display = "block";
         alert('Please enter a message');
-        return false;
     }
 
     if (message !== "") {
@@ -85,7 +81,6 @@ function validateForm() {
     if (message.length > 30) {
         error4.style.display = "block";
         alert('Message should not exceed 30 characters');
-        return false;
     }
 
     if (message.length < 30) {
@@ -97,7 +92,6 @@ function validateForm() {
         alert("Please fill out the delivery date")
         console.log('delivery date');
         error5.style.display = "block";
-        return false
     }
 
     if (date !== "") {
@@ -108,13 +102,11 @@ function validateForm() {
         console.log("hel")
         alert("Please enter a delivery address")
         error6.style.display = "block";
-        return false;
     }
 
     if (del.value.length > 500) {
         alert("Address should not exceed 500 characters");
         error7.style.display = "block";
-        return false;
     }
 
     if (del.value.length < 500) {
@@ -124,6 +116,13 @@ function validateForm() {
     if (del.value !== "") {
         error6.style.display = "none";
     }
+
+
+    if ((cakeselect == "placeholder") || (name.value == "") || (name.value.length > 100) || (message == "") || (message.length > 30) || (date == "") || (del.value == "") || (del.value.length > 500)) {
+        console.log('fail');
+        return false;
+    }
+
 
 
 
