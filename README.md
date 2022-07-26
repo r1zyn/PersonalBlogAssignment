@@ -24,10 +24,10 @@ When downloading the zip files, only the `pages` folder is required for the webs
 ## Author
 
 👤 **r1zyn**
-[@Ascendus](https://github.com/r1zyn)
+[@r1zyn](https://github.com/r1zyn)
 
 ## 🤝 Contributing
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/r1zyn/PersonalBlogAssignment/issues). You can also take a look at the [contributing guide](https://github.com/Ascendus/PersonalBlogAssignment/blob/main/.github/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/r1zyn/PersonalBlogAssignment/issues). You can also take a look at the [contributing guide](https://github.com/r1zyn/PersonalBlogAssignment/blob/main/.github/CONTRIBUTING.md).
 
 ## Show your support
 Give a ⭐️ if this project helped you!
